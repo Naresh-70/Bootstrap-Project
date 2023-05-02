@@ -1,7 +1,7 @@
 /*Reset*/
 :root {
     --primary-text-color: #000000;
-    --accent-color: #2294ed;   
+    --accent-color: #2294ed;
 }
 
 body {
@@ -17,7 +17,7 @@ span {
 h3 {
     font-family: 'Dosis', sans-serif;
     font-size: 1.5rem;
-    color: #000 !important;
+    color: #000;
 }
 
 /*Utility Classes*/
@@ -199,14 +199,21 @@ nav.navbar {
     padding: 30px;
 }
 
+.info h3 {
+    color: #000;
+}
+
 .class-card-info a i {
     color: var(--accent-color);
     margin-right: 10px;
 }
 
 .our-class-card {
-    overflow: hidden;
     border-radius: 10px;
+}
+
+.card-images {
+    overflow: hidden;
 }
 
 .our-class-card img {
@@ -218,7 +225,44 @@ nav.navbar {
 }
 
 .our-class-card .class-card-info {
-    box-shadow: 2px 2px 2px #000;
+    transition: .4s ease;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+}
+
+.our-class-card .class-card-info:hover {
+    box-shadow: 3px 6px 10px rgba(53, 52, 52, 0.11);
+}
+
+.owl-nav .owl-prev {
+    position: absolute;
+    top: 40%;
+    left: -4%;
+    /* background-color: #00ad8d !important; */
+}
+
+.owl-prev span {
+    padding: 0px 10px;
+    font-size: 40px;
+}
+
+.owl-next {
+    position: absolute;
+    top: 40%;
+    right: -4%;
+    /* background-color: #00ad8d !important; */
+}
+
+.owl-next span {
+    padding: 0px 10px;
+    font-size: 40px;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background: transparent;
+    color: #FFF;
+    text-decoration: none;
 }
 
 /*Subscribe*/
@@ -278,7 +322,7 @@ nav.navbar {
     line-height: 190px;
 }
 
-.footer-title h3 {
+footer .footer-title h3 {
     color: #fff;
     margin-bottom: 20px;
     transition: .8s ease;
