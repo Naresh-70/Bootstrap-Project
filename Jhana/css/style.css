@@ -5,6 +5,7 @@ body {
 
 :root {
     --primary-text-color: #00AD8D;
+    --secondary-text-color: #F05C5C;
 }
 
 a {
@@ -13,18 +14,60 @@ a {
 
 h3 {
     font-family: 'dosis', sans-serif;
-    font-size: 24px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 p {
-    font-size: 14px;
+    font-size: 13px;
     color: #606060;
     line-height: 28px;
+}
+
+span {
+    font-size: 14px;
+    color: #606060;
 }
 
 /* Utility Classes */
 .section {
     padding: 4em 0em;
+}
+
+.primary-button {
+    margin-top: 30px;
+}
+
+.our-button {
+    background-color: var(--secondary-text-color);
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 500;
+    box-shadow: 5px 4px 13px 0px rgba(239.99999999999997, 92.00000000000001, 95, 0.33);
+    transition: .8s ease;
+}
+
+.our-button:hover {
+    background-color: var(--primary-text-color);
+}
+
+.main-title {}
+
+.title {
+    font-size: 2.5em;
+    color: #000;
+    font-weight: 500;
+    font-family: 'arvo', sans-serif;
+    margin: 12px 0px;
+    line-height: 50px;
+}
+
+.sub-title {
+    font-size: 16px;
+    color: var(--primary-text-color);
+    font-weight: 500;
 }
 
 /*Navbar*/
@@ -85,23 +128,74 @@ p {
     opacity: 0.7;
 }
 
+.carousel-caption h4 {
+    color: var(--primary-text-color);
+}
+
+.carousel-caption p {
+    font-size: 22px;
+    color: #fff;
+}
+
 /*Features*/
-.features-card {
+.features-card-menu {
     padding: 30px 30px 0px 30px;
     border-radius: 10px;
-    /* margin: 5px; */
+    border: 1px solid gray;
+    transition: .5s ease;
 }
 
-.features .features-card .features-card-img {
-    width: 20%;
-    margin-right: 20px;
+.features .col-md-3 {
+    padding: 0px 15px;
 }
 
-.features .features-card .features-card-info {
-    width: 75%;
+.features-card-menu:hover .features-card-img img {
+    filter: brightness(0) invert(1);
+}
+
+.features-card-menu:hover p {
+    color: #fff;
+}
+
+.features-card-menu:hover {
+    background-color: var(--primary-text-color);
+    color: #fff;
 }
 
 /*Yoga Benefit*/
-.benefit-card .benefit-card-img img {
-    border-radius: 50%;
+.yoga-benefit .benefit-card-info {
+    margin-left: 20px;
+}
+
+.yoga-benefit .benefit-card-info p {
+    font-size: 14px;
+    word-spacing: 1px;
+}
+
+.yoga-benefit .benefit-card-point span {
+    display: block;
+    line-height: 35px;
+}
+
+.yoga-benefit .benefit-card-point i {
+    color: var(--primary-text-color);
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+/*Mini Section*/
+.mini-section .col-md-1 {
+    margin: 0px 76px;
+}
+
+.mini-section-img::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    background-color: #000;
+    opacity: 0.7;
 }
