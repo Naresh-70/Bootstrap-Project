@@ -15,8 +15,7 @@ a {
 
 h3 {
     font-family: 'dosis', sans-serif;
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 1.8em;
 }
 
 p {
@@ -155,6 +154,10 @@ span {
     filter: brightness(0) invert(1);
 }
 
+.features .features-card-info h3 {
+    font-size: 18px;
+}
+
 .features-card-menu:hover p {
     color: #fff;
 }
@@ -218,7 +221,6 @@ span {
 }
 
 .trainer-section .trainer-info h3 {
-    font-size: 1.8em;
     transition: .8s ease;
 }
 
@@ -235,3 +237,71 @@ span {
     color: var(--primary-text-color);
     cursor: pointer;
 }
+
+/*Our Classes*/
+.classes-section .classes-card-img {
+    transition: .8s ease;
+    overflow: hidden;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.classes-section .classes-card-img img {
+    transition: .8s ease;
+}
+
+.classes-section .classes-card-info {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.09);
+}
+
+.classes-section .classes-card-info {
+    padding: 30px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.classes-section .classes-card-info span i {
+    color: var(--primary-text-color);
+}
+
+.classes-card:hover img {
+    transform: scale(1.1);
+}
+
+.classes-card:hover .classes-card-info {
+    box-shadow: 3px 9px 10px rgba(53, 52, 52, 0.11);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .our-classes-section .classes-card-img img:hover {
+    transform: scale(1.1);
+} */
+
+/* .classes-card:hover.classes-card-img {
+    box-shadow: 3px 9px 10px rgba(53, 52, 52, 0.11);
+} */
+
+
+
+/* .our-classes-section .classes-card:hover {
+    box-shadow: 3px 9px 10px rgba(53, 52, 52, 0.11);
+} */
