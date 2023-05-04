@@ -10,6 +10,7 @@ body {
 
 a {
     text-decoration: none;
+    display: inline-block;
 }
 
 h3 {
@@ -26,7 +27,6 @@ p {
 
 span {
     font-size: 14px;
-    color: #606060;
 }
 
 /* Utility Classes */
@@ -35,7 +35,7 @@ span {
 }
 
 .primary-button {
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .our-button {
@@ -53,14 +53,16 @@ span {
     background-color: var(--primary-text-color);
 }
 
-.main-title {}
+.main-title {
+    margin-bottom: 1.5em;
+}
 
 .title {
     font-size: 2.5em;
     color: #000;
     font-weight: 500;
     font-family: 'arvo', sans-serif;
-    margin: 12px 0px;
+    margin-top: 12px;
     line-height: 50px;
 }
 
@@ -175,6 +177,7 @@ span {
 .yoga-benefit .benefit-card-point span {
     display: block;
     line-height: 35px;
+    color: #606060;
 }
 
 .yoga-benefit .benefit-card-point i {
@@ -188,14 +191,47 @@ span {
     margin: 0px 76px;
 }
 
-.mini-section-img::before{
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    right: 0%;
-    bottom: 0%;
-    background-color: #000;
-    opacity: 0.7;
+.mini-section-img img {
+    opacity: .6;
+}
+
+.mini-section-img img:hover {
+    opacity: 1;
+}
+
+/*Trainer*/
+.trainer-section .trainer-img {
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.trainer-section .trainer-img img {
+    transition: .8s ease;
+}
+
+.trainer-section .trainer-img img:hover {
+    transform: scale(1.1);
+}
+
+.trainer-section .trainer-info {
+    padding: 20px;
+}
+
+.trainer-section .trainer-info h3 {
+    font-size: 1.8em;
+    transition: .8s ease;
+}
+
+.trainer-section .trainer-info h3:hover {
+    color: var(--primary-text-color);
+}
+
+.trainer-section .trainer-info span {
+    transition: .8s ease;
+    cursor: pointer;
+}
+
+.trainer-section .trainer-info span:hover {
+    color: var(--primary-text-color);
+    cursor: pointer;
 }
