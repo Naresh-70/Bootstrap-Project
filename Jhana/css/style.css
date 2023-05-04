@@ -18,6 +18,11 @@ h3 {
     font-size: 1.8em;
 }
 
+h4 {
+    font-family: 'dosis', sans-serif;
+    font-size: 1.5em;
+}
+
 p {
     font-size: 13px;
     color: #606060;
@@ -191,7 +196,11 @@ span {
 
 /*Mini Section*/
 .mini-section .col-md-1 {
-    margin: 0px 76px;
+    /* margin: 0px 76px; */
+}
+
+.mini-section-img {
+    width: 50%;
 }
 
 .mini-section-img img {
@@ -272,36 +281,45 @@ span {
     box-shadow: 3px 9px 10px rgba(53, 52, 52, 0.11);
 }
 
+.item {
+    padding: 20px;
+}
 
+.owl-nav .owl-prev {
+    position: absolute;
+    top: 40%;
+    left: -4%;
+}
 
+.owl-nav .owl-next {
+    position: absolute;
+    top: 40%;
+    right: -4%;
+}
 
+.owl-nav span {
+    font-size: 35px;
+    background-color: var(--secondary-text-color);
+    padding: 2px 12px;
+    border-radius: 12px;
+    color: var(--primary-text-color);
+}
 
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background: transparent;
+    color: #FFF;
+    text-decoration: none;
+}
 
+/*Review*/
+.review-section {
+    background-color: oldlace;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* .our-classes-section .classes-card-img img:hover {
-    transform: scale(1.1);
-} */
-
-/* .classes-card:hover.classes-card-img {
-    box-shadow: 3px 9px 10px rgba(53, 52, 52, 0.11);
-} */
-
-
-
-/* .our-classes-section .classes-card:hover {
-    box-shadow: 3px 9px 10px rgba(53, 52, 52, 0.11);
-} */
+.review-section .review-card {
+    background-color: #fff;
+    padding: 25px 50px;
+}
+.review-section .review-card p{
+    font-size: 14px;
+}
