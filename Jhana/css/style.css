@@ -195,12 +195,9 @@ span {
 }
 
 /*Mini Section*/
-.mini-section .col-md-1 {
-    /* margin: 0px 76px; */
-}
-
 .mini-section-img {
     width: 50%;
+    margin: 0 auto;
 }
 
 .mini-section-img img {
@@ -259,6 +256,20 @@ span {
     transition: .8s ease;
 }
 
+.classes-section .classes-card-info h3 {
+    transition: .8s ease;
+}
+
+.classes-section .classes-card-info h3:hover {
+    color: var(--primary-text-color);
+    cursor: pointer;
+}
+
+.classes-section .classes-card-info span:hover {
+    color: var(--primary-text-color);
+    cursor: pointer;
+}
+
 .classes-section .classes-card-info {
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.09);
 }
@@ -271,6 +282,7 @@ span {
 
 .classes-section .classes-card-info span i {
     color: var(--primary-text-color);
+    margin-right: 10px;
 }
 
 .classes-card:hover img {
@@ -320,6 +332,7 @@ span {
     background-color: #fff;
     padding: 25px 50px;
 }
-.review-section .review-card p{
+
+.review-section .review-card p {
     font-size: 14px;
 }
