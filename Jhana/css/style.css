@@ -21,6 +21,7 @@ h3 {
 h4 {
     font-family: 'dosis', sans-serif;
     font-size: 1.5em;
+    margin: 12px 0px;
 }
 
 p {
@@ -227,7 +228,7 @@ span {
 }
 
 .trainer-section .trainer-info h3 {
-    transition: .8s ease;
+    transition: .2s ease;
 }
 
 .trainer-section .trainer-info h3:hover {
@@ -235,7 +236,7 @@ span {
 }
 
 .trainer-section .trainer-info span {
-    transition: .8s ease;
+    transition: .2s ease;
     cursor: pointer;
 }
 
@@ -246,7 +247,7 @@ span {
 
 /*Our Classes*/
 .classes-section .classes-card-img {
-    transition: .8s ease;
+    transition: .2s ease;
     overflow: hidden;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
@@ -257,7 +258,7 @@ span {
 }
 
 .classes-section .classes-card-info h3 {
-    transition: .8s ease;
+    transition: .2s ease;
 }
 
 .classes-section .classes-card-info h3:hover {
@@ -325,14 +326,111 @@ span {
 
 /*Review*/
 .review-section {
-    background-color: oldlace;
+    /* background-color: oldlace; */
 }
 
 .review-section .review-card {
     background-color: #fff;
     padding: 25px 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.09);
+    transition: .8s ease;
+}
+
+.review-section .review-card:hover {
+    box-shadow: 3px 9px 10px rgba(53, 52, 52, 0.11);
 }
 
 .review-section .review-card p {
     font-size: 14px;
+}
+
+.review-section .user-review-info {
+    margin-top: 25px;
+}
+
+.review-section .user-review-img {
+    width: 12%;
+    margin-right: 30px;
+}
+
+.review-section .user-review-img img {
+    border-radius: 50%;
+}
+
+.review-section .user-review-contact span {
+    color: var(--primary-text-color);
+}
+
+/*Video*/
+.review-section .video-title {
+    margin: 4em 0em;
+}
+
+.review-section .video-title h2 {
+    font-size: 2em;
+}
+
+.review-section .watch-video .video {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.review-section .watch-video .video img {
+    transition: .8s ease;
+}
+
+.review-section .watch-video .video:hover img {
+    transform: scale(1.1);
+}
+
+.review-section .watch-video .video {
+    position: relative;
+}
+
+.review-section .watch-video .video-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.review-section .video-icon i {
+    color: var(--primary-text-color);
+    background-color: #fff;
+    cursor: pointer;
+    text-align: center;
+    font-size: 36px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    line-height: 83px;
+    padding-left: 4px;
+    transition: .8s ease;
+}
+
+.review-section .video:hover i {
+    font-size: 40px;
+    transform: scale(1.2);
+}
+
+.review-section .watch-video .video-icon {
+    animation: ripple;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    border-radius: 50%;
+}
+
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 #fff4, 0 0 0 0 #fff4;
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px #fff4, 0 0 0 15px #fff4;
+    }
+
+    100% {
+        box-shadow: 0 0 0 15px #fff1, 0 0 0 15px #fff1;
+    }
 }
