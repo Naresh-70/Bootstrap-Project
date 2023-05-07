@@ -67,7 +67,7 @@ span {
     color: #000;
     font-weight: 500;
     font-family: 'arvo', sans-serif;
-    margin-top: 12px;
+    margin: 18px 0px;
     line-height: 50px;
 }
 
@@ -301,21 +301,23 @@ span {
 .owl-nav .owl-prev {
     position: absolute;
     top: 40%;
-    left: -4%;
+    left: -3%;
 }
 
 .owl-nav .owl-next {
     position: absolute;
     top: 40%;
-    right: -4%;
+    right: -3%;
 }
 
 .owl-nav span {
     font-size: 35px;
-    background-color: var(--secondary-text-color);
-    padding: 2px 12px;
-    border-radius: 12px;
-    color: var(--primary-text-color);
+    /* background-color: var(--secondary-text-color); */
+    /* border-radius: 12px; */
+    /* padding: 2px 12px; */
+    /* color: var(--primary-text-color); */
+    color: gray;
+    font-size: 4em;
 }
 
 .owl-theme .owl-nav [class*='owl-']:hover {
@@ -434,3 +436,165 @@ span {
         box-shadow: 0 0 0 15px #fff1, 0 0 0 15px #fff1;
     }
 }
+
+/*Blog*/
+.blog-section .blog-card i {
+    color: var(--primary-text-color);
+}
+
+.blog-section .blog-card-info {
+    padding: 30px;
+}
+
+.blog-section .blog-card h3 {
+    margin: 20px 0px;
+    letter-spacing: 1px;
+}
+
+.blog-section .blog-card i {
+    margin-right: 10px;
+}
+
+.blog-section .blog-card-info {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.09);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+.blog-section .blog-card-img {
+    overflow: hidden;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.blog-section .blog-card-img img {
+    transition: .8s ease;
+}
+
+.blog-section .blog-card:hover img {
+    transform: scale(1.1);
+}
+
+.blog-section .blog-card {
+    transition: .8s ease;
+}
+
+.blog-section .blog-card:hover {
+    box-shadow: 3px 9px 10px rgba(53, 52, 52, 0.11);
+}
+
+.blog-section .blog-bottom-info {
+    margin-top: 1.5em;
+}
+
+.blog-section .blog-bottom-info a {
+    text-decoration: underline;
+    color: var(--primary-text-color);
+    font-size: 22px;
+    padding-left: 10px;
+}
+
+/*Subscribe*/
+.subscribe-section {
+    background-color: oldlace;
+}
+
+.subscribe-section .main-title {
+    margin: 4em;
+}
+
+.subscribe-section .subscribe-input {
+    margin-bottom: 4em;
+}
+
+.subscribe-section .subscribe-input form input[type="email"] {
+    height: 50px;
+    padding: 0px 30px;
+    border-radius: 50px 0 0 50px;
+    border-style: solid;
+    border-width: 1px 0px 1px 1px;
+    border-color: rgba(27, 35, 54, 0.50);
+    outline-color: var(--primary-text-color);
+}
+
+.subscribe-section .subscribe-input form input[type="submit"] {
+    position: relative;
+    left: -5px;
+    padding: 0px 30px;
+    border-radius: 0 50px 50px 0;
+    border-width: 1px 0px 1px 1px;
+    border-style: solid;
+    border-color: #606060;
+    font-size: 18px;
+    font-weight: 500;
+    height: 50px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: var(--secondary-text-color);
+    color: #fff;
+}
+
+/*Footer*/
+footer {
+    background-color: #0c0732;
+    color: #fff;
+    padding: 40px 0px;
+}
+
+footer .footer-card span {
+    display: block;
+}
+
+footer .follow-us span i {
+    border: 1px solid #fff;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 2px;
+}
+
+footer .footer-card .footer-address span i {
+    margin: 12px 12px 12px 0px;
+}
+
+footer .footer-card .usefull-link li a {
+    margin: 12px 12px 12px 0px;
+    border-bottom: 1px dotted #fff;
+    width: 85%;
+}
+
+footer .footer-card .follow-us span i {
+    margin: 8px 8px 8px 0px;
+}
+
+footer .footer-card .contact-us span i {
+    margin: 8px 8px 8px 0px;
+}
+
+footer .follow-us .fa-facebook-f {
+    background-color: #38539b;
+}
+
+footer .follow-us .fa-instagram {
+    background-image: linear-gradient(10deg, #efa513, #9007dc);
+}
+
+footer .follow-us .fa-twitter {
+    background-color: #4ea6ea;
+}
+
+footer .follow-us .fa-linkedin {
+    background-color: #007ab3;
+}
+
+/*Sub-Footer*/
+.sub-footer {
+    background-color: #000;
+    padding: 10px;
+    color: #fff;
+}
+
+/*!----------------------Home Section The End-----------------------*/
