@@ -50,3 +50,19 @@ $('.owl-carousel').owlCarousel({
 })
 
 
+const scrollbtn = document.querySelector('.scroll');
+window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+        scrollbtn.style.display = "block";
+    }
+    else {
+        scrollbtn.style.display = "none";
+    }
+});
+
+scrollbtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior:"smooth",
+    })
+});

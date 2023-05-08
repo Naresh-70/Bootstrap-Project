@@ -78,52 +78,52 @@ span {
 }
 
 /*Navbar*/
-.logo {
+header .logo {
     width: 12%;
 }
 
-.navbar {
+header .navbar {
     padding: 0px;
 }
 
-.navbar-expand-lg .navbar-nav .nav-link {
+header .navbar-expand-lg .navbar-nav .nav-link {
     padding: 0px 25px;
 }
 
-.nav-item .navitem-highlight {
+header .nav-item .navitem-highlight {
     color: var(--primary-text-color);
 }
 
-.nav-item a.nav-link:hover {
+header .nav-item a.nav-link:hover {
     color: var(--primary-text-color);
 }
 
-.navbar-contact i {
+header .navbar-contact i {
     font-size: 30px;
     color: var(--primary-text-color);
     margin-right: 10px;
 }
 
-.calling {
+header .calling {
     font-weight: 500;
 }
 
-.calling h3 {
+header .calling h3 {
     margin: 0;
 }
 
-.calling a {
+header .calling a {
     color: var(--primary-text-color);
     font-size: 18px;
 }
 
 /*Main Carousel*/
-.carousel-item img {
+.carousel-section .carousel-item img {
     height: 720px;
     object-fit: cover;
 }
 
-.carousel-item::before {
+.carousel-section .carousel-item::before {
     content: '';
     display: block;
     position: absolute;
@@ -135,32 +135,28 @@ span {
     opacity: 0.7;
 }
 
-.carousel-caption h4 {
+.carousel-section .carousel-caption h4 {
     color: var(--primary-text-color);
 }
 
-.carousel-caption p {
+.carousel-section .carousel-caption p {
     font-size: 22px;
     color: #fff;
 }
 
 /*Features*/
-.features-card-menu {
+.features-section .features-card-menu {
     padding: 30px 30px 0px 30px;
     border-radius: 10px;
     border: 1px solid gray;
     transition: .5s ease;
 }
 
-.features .col-md-3 {
-    padding: 0px 15px;
-}
-
 .features-card-menu:hover .features-card-img img {
     filter: brightness(0) invert(1);
 }
 
-.features .features-card-info h3 {
+.features-section .features-card-info h3 {
     font-size: 18px;
 }
 
@@ -174,38 +170,38 @@ span {
 }
 
 /*Yoga Benefit*/
-.yoga-benefit .benefit-card-info {
+.benefit-section .benefit-card-info {
     margin-left: 20px;
 }
 
-.yoga-benefit .benefit-card-info p {
+.benefit-section .benefit-card-info p {
     font-size: 14px;
     word-spacing: 1px;
 }
 
-.yoga-benefit .benefit-card-point span {
+.benefit-section .benefit-card-point span {
     display: block;
     line-height: 35px;
     color: #606060;
 }
 
-.yoga-benefit .benefit-card-point i {
+.benefit-section .benefit-card-point i {
     color: var(--primary-text-color);
     margin-right: 8px;
     font-size: 20px;
 }
 
 /*Mini Section*/
-.mini-section-img {
+.mini-section .mini-section-img {
     width: 50%;
     margin: 0 auto;
 }
 
-.mini-section-img img {
+.mini-section .mini-section-img img {
     opacity: .6;
 }
 
-.mini-section-img img:hover {
+.mini-section .mini-section-img img:hover {
     opacity: 1;
 }
 
@@ -312,12 +308,13 @@ span {
 
 .owl-nav span {
     font-size: 35px;
-    /* background-color: var(--secondary-text-color); */
-    /* border-radius: 12px; */
-    /* padding: 2px 12px; */
-    /* color: var(--primary-text-color); */
     color: gray;
     font-size: 4em;
+    transition: .8s ease;
+}
+
+.owl-nav span:hover {
+    color: var(--primary-text-color);
 }
 
 .owl-theme .owl-nav [class*='owl-']:hover {
@@ -327,10 +324,6 @@ span {
 }
 
 /*Review*/
-.review-section {
-    /* background-color: oldlace; */
-}
-
 .review-section .review-card {
     background-color: #fff;
     padding: 25px 50px;
@@ -525,7 +518,7 @@ span {
     border-width: 1px 0px 1px 1px;
     border-style: solid;
     border-color: #606060;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     height: 50px;
     cursor: pointer;
@@ -540,6 +533,15 @@ footer {
     background-color: #0c0732;
     color: #fff;
     padding: 40px 0px;
+}
+
+footer .footer-card h3 {
+    margin-bottom: 18px;
+    transition: .8s ease;
+}
+
+footer .footer-card h3:hover {
+    color: var(--primary-text-color);
 }
 
 footer .footer-card span {
@@ -558,6 +560,10 @@ footer .follow-us span i {
 
 footer .footer-card .footer-address span i {
     margin: 12px 12px 12px 0px;
+}
+
+footer .footer-card ul {
+    padding: 0px 12px;
 }
 
 footer .footer-card .usefull-link li a {
@@ -597,4 +603,20 @@ footer .follow-us .fa-linkedin {
     color: #fff;
 }
 
+/*Scroll Button*/
+.scroll-section .scroll {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    background-color: var(--primary-text-color);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    color: #fff;
+    display: none;
+}
+
 /*!----------------------Home Section The End-----------------------*/
+/*!----------------------********************-----------------------*/
