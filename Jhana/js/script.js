@@ -17,6 +17,7 @@ $('.owl-carousel-mini').owlCarousel({
 $('.owl-carousel-review').owlCarousel({
     loop: true,
     margin: 0,
+    autoplay: true,
     responsive: {
         0: {
             items: 1
@@ -66,3 +67,6 @@ scrollbtn.addEventListener('click', () => {
         behavior:"smooth",
     })
 });
+
+
+
