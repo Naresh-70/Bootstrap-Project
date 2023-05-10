@@ -36,7 +36,7 @@ span {
 
 /* Utility Classes */
 .section {
-    padding: 4em 0em;
+    padding: 5em 0em;
 }
 
 .primary-button {
@@ -540,26 +540,28 @@ header .calling a {
     color: #fff;
 }
 
-/*Footer*/
+/*Footer-Section*/
 article {
     position: relative;
-    margin-bottom: 420px;
+    width: 100%;
+    min-height: 100vh;
     z-index: 10;
     background-color: #fff;
+    margin-bottom: 435px;
 }
 
 footer {
     background-color: #0c0732;
     color: #fff;
     padding: 4em 0em;
-    position: fixed;
     width: 100%;
-    bottom: 0;
+    position: fixed;
+    bottom: 50px;
     z-index: 1;
 }
 
 footer .footer-card h3 {
-    margin-bottom: 18px;
+    margin-bottom: 30px;
     transition: .8s ease;
 }
 
@@ -582,7 +584,11 @@ footer .follow-us span i {
 }
 
 footer .footer-card .footer-address span i {
-    margin: 12px 12px 12px 0px;
+    margin: 16px 12px 12px 0px;
+}
+
+footer .contact-us span {
+    margin-top: 10px;
 }
 
 footer .footer-card ul {
@@ -592,7 +598,8 @@ footer .footer-card ul {
 footer .footer-card .usefull-link li a {
     margin: 12px 12px 12px 0px;
     border-bottom: 1px dotted #fff;
-    width: 85%;
+    width: 80%;
+    padding: 1px 0px;
 }
 
 footer .footer-card .follow-us span i {
@@ -654,7 +661,7 @@ footer .follow-us .fa-linkedin {
 /*-----------------Home Section The End------------------*/
 /*-----------------********************------------------*/
 
-/*?----------Our-Trainers-Section------------*/
+/*----------Our-Trainers-Section-Start------------*/
 
 /*Hero Secton*/
 .main-section {
@@ -710,28 +717,88 @@ footer .follow-us .fa-linkedin {
 }
 
 /*Trainer*/
-.trainer-section .trainer-info {
+.our-trainer-section .trainer-info {
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.09);
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding: 20px 0px;
 }
 
-.trainer-section .trainer-img {
-    border-bottom-right-radius: unset;
-    border-bottom-left-radius: unset;
+.our-trainer-section .trainer-img {
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    overflow: hidden;
 }
 
-.trainer-section .trainer-card {
+.our-trainer-section .trainer-card {
     margin: 18px 0px;
 }
 
-.trainer-section .trainer-info {
-    border-bottom-right-radius: 12px;
-    border-bottom-left-radius: 12px;
+.our-trainer-section .trainer-img img {
+    transition: .8s ease;
 }
 
-.trainer-section .trainer-card:hover img {
+.our-trainer-section .trainer-card:hover img {
     transform: scale(1.1);
 }
 
-.trainer-section .trainer-card:hover .trainer-info {
+.our-trainer-section .trainer-card:hover .trainer-info {
     box-shadow: 3px 9px 10px rgba(53, 52, 52, 0.11);
+}
+
+/*-----------------Our-Trainer-End------------------*/
+/*-----------------********************------------------*/
+
+/*-----------------------Our-Trainers-Section-----------------------------*/
+/*Trainers-Details*/
+
+.biography-menu {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.09);
+    border-radius: 12px;
+    padding: 70px 20px;
+}
+
+.biography-section .biography-image img {
+    border-radius: 50%;
+}
+
+.biography-image {
+    padding: 0px 20px;
+}
+
+.biography-section .biography-info {
+    padding: 0px 20px;
+}
+
+.biography-section .biography-info h2 {
+    font-size: 3em;
+}
+
+.biography-section .biography-info .main-title {
+    margin-bottom: 5em;
+}
+
+.biography-section .biography-social-icon {
+    margin: 2em 0px;
+}
+
+.biography-section .biography-social-icon a {
+    margin: 0px 5px;
+    color: var(--primary-text-color);
+    border: 1px solid #ccc;
+    height: 32px;
+    width: 32px;
+    line-height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.biography-call h5 {
+    font-weight: 600;
+}
+
+.biography-section .skill {
+    margin: 50px 0px;
+    font-size: 18px;
 }
