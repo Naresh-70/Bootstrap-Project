@@ -87,7 +87,7 @@ header .navbar {
 }
 
 header .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 0px 25px;
+    padding: 28px 25px;
 }
 
 .navbar-menu .nav-item a {
@@ -119,6 +119,23 @@ header .calling h3 {
 header .calling a {
     color: var(--primary-text-color);
     font-size: 18px;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    border-top: 4px solid var(--primary-text-color);
+    border-left: 4px solid var(--primary-text-color);
+}
+
+.navbar-expand-lg .dropdown-menu li a {
+    transition: .2s ease;
+}
+
+.navbar-expand-lg .dropdown-menu li a:hover {
+    color: var(--primary-text-color);
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
 
 /*Main Carousel*/
@@ -621,7 +638,7 @@ footer .contact-us form textarea {
 }
 
 footer .contact-us form a {
-    border-radius: 0;
+    border-radius: 6px;
     padding: 5px 50px;
 }
 
@@ -656,7 +673,7 @@ footer .follow-us .fa-linkedin {
 .sub-footer {
     background-color: #000;
     padding: 1.2em;
-    color: #fff;
+    color: #aaa;
     font-size: 13px;
 }
 
@@ -768,7 +785,7 @@ footer .follow-us .fa-linkedin {
 /*-----------------Our-Trainer-End------------------*/
 /*-----------------********************------------------*/
 
-/*-----------------------Our-Trainers-Section-----------------------------*/
+/*-----------------------Our-Trainers-Details-Section-----------------------------*/
 /*Trainers-Details*/
 
 .biography-menu {
@@ -820,4 +837,27 @@ footer .follow-us .fa-linkedin {
 .biography-section .skill {
     margin: 50px 0px;
     font-size: 18px;
+}
+
+/*----------------Trainers-Details-Section-End------------------*/
+/*----------------****************************------------------*/
+
+/*Location-Section*/
+.location-section .location-card i {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 22px;
+    text-align: center;
+    color: var(--primary-text-color);
+    border-radius: 50%;
+    border: 1px solid var(--primary-text-color);
+}
+
+.location-section .location-info{
+    margin-top: 1em;
+}
+.location-section .location-info span{
+    font-size: 22px;
+    font-weight: 500;
 }
