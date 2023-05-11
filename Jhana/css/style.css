@@ -182,6 +182,11 @@ header .calling a {
 }
 
 /*Yoga Benefit*/
+.benefit-section .benefit-card-img img {
+    border-radius: 50%;
+    margin: 20px 0px 0px 60px;
+}
+
 .benefit-section .benefit-card-info {
     margin-left: 20px;
 }
@@ -547,7 +552,7 @@ article {
     min-height: 100vh;
     z-index: 10;
     background-color: #fff;
-    margin-bottom: 435px;
+    margin-bottom: 466px;
 }
 
 footer {
@@ -584,30 +589,44 @@ footer .follow-us span i {
 }
 
 footer .footer-card .footer-address span i {
-    margin: 16px 12px 12px 0px;
-}
-
-footer .contact-us span {
-    margin-top: 10px;
-}
-
-footer .footer-card ul {
-    padding: 0px 12px;
+    margin: 22px 12px 12px 0px;
 }
 
 footer .footer-card .usefull-link li a {
-    margin: 12px 12px 12px 0px;
-    border-bottom: 1px dotted #fff;
-    width: 80%;
+    margin: 5px 12px 12px 0px;
     padding: 1px 0px;
 }
 
-footer .footer-card .follow-us span i {
-    margin: 8px 8px 8px 0px;
+footer .contact-us form input {
+    background-color: #0c0732;
+    margin: 5px 0px;
+    border: 1px solid #fff;
+    padding: 8px;
+    color: #fff;
+    border-radius: 2px;
 }
 
-footer .footer-card .contact-us span i {
-    margin: 8px 8px 8px 0px;
+footer .footer-card .usefull-link i {
+    margin-right: 8px;
+}
+
+footer .contact-us form textarea {
+    background-color: #0c0732;
+    width: 72%;
+    margin: 5px 0px;
+    border: 1px solid #fff;
+    padding: 8px;
+    color: #fff;
+    border-radius: 2px;
+}
+
+footer .contact-us form a {
+    border-radius: 0;
+    padding: 5px 50px;
+}
+
+footer .footer-card .follow-us span i {
+    margin: 10px 8px 8px 0px;
 }
 
 footer .follow-us .fa-facebook-f {
