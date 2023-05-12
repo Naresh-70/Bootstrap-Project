@@ -36,7 +36,7 @@ span {
 
 /* Utility Classes */
 .section {
-    padding: 5em 0em;
+    padding: 4em 0em;
 }
 
 .primary-button {
@@ -78,6 +78,10 @@ span {
 }
 
 /*Navbar*/
+.navbar-menu {
+    padding: 0em 5.5em;
+}
+
 header .logo {
     width: 12%;
 }
@@ -90,7 +94,7 @@ header .navbar-expand-lg .navbar-nav .nav-link {
     padding: 28px 25px;
 }
 
-.navbar-menu .nav-item a {
+nav .nav-item a {
     color: #000;
 }
 
@@ -158,19 +162,20 @@ header .calling a {
 
 .carousel-section .carousel-caption h4 {
     color: var(--primary-text-color);
+    font-size: 2.5em;
 }
 
 .carousel-section .carousel-caption p {
-    font-size: 22px;
+    font-size: 25px;
     color: #fff;
 }
 
 .carousel-caption {
-    top: 70%;
+    top: 65%;
 }
 
 .carousel-indicators {
-    top: 88%;
+    top: 85%;
 }
 
 /*Features*/
@@ -664,12 +669,6 @@ footer .follow-us .fa-linkedin {
 }
 
 /*Sub-Footer*/
-.sub-footer-section {
-    /* position: fixed;
-    width: 100%; */
-    /* margin: 130px 0px; */
-}
-
 .sub-footer {
     background-color: #000;
     padding: 1.2em;
@@ -694,13 +693,14 @@ footer .follow-us .fa-linkedin {
     z-index: 99999;
 }
 
-/*-----------------Home Section The End------------------*/
-/*-----------------********************------------------*/
+/*------------Home Section The End----------*/
+/*------------********************----------*/
 
-/*----------Our-Trainers-Section-Start------------*/
+/*------------Trainers-Page-Start-----------*/
+/*------------********************----------*/
 
 /*Hero Secton*/
-.main-section {
+.hero-section {
     position: relative;
 }
 
@@ -720,54 +720,54 @@ footer .follow-us .fa-linkedin {
     background-color: rgba(27, 35, 54, 0.7);
 }
 
-.main-section .main-title {
+.hero-section .main-title {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.main-section .main-title h2 {
+.hero-section .main-title h2 {
     color: #fff;
 }
 
-.main-section .main-title span {
+.hero-section .main-title span {
     color: #fff;
 }
 
 /*Center-section*/
-.center-section .center-card {
+.balance-section .balance-card {
     overflow: hidden;
 }
 
-.center-section .center-card {
+.balance-section .balance-card {
     border-radius: 12px;
 }
 
-.center-section .center-card img {
+.balance-section .balance-card img {
     transition: .8s ease;
 }
 
-.center-section .center-card img:hover {
+.balance-section .balance-card img:hover {
     transform: scale(1.1);
 }
 
 /*Trainer*/
-.our-trainer-section .trainer-info {
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.09);
-    border-bottom-right-radius: 12px;
-    border-bottom-left-radius: 12px;
-    padding: 20px 0px;
-}
-
 .our-trainer-section .trainer-img {
     border-top-right-radius: 12px;
     border-top-left-radius: 12px;
     overflow: hidden;
 }
 
+.our-trainer-section .trainer-info {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.09);
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    padding: 25px 0px;
+}
+
 .our-trainer-section .trainer-card {
-    margin: 18px 0px;
+    margin: 40px 0px;
 }
 
 .our-trainer-section .trainer-img img {
@@ -782,13 +782,8 @@ footer .follow-us .fa-linkedin {
     box-shadow: 3px 9px 10px rgba(53, 52, 52, 0.11);
 }
 
-/*-----------------Our-Trainer-End------------------*/
-/*-----------------********************------------------*/
-
-/*-----------------------Our-Trainers-Details-Section-----------------------------*/
-/*Trainers-Details*/
-
-.biography-menu {
+/*Biography-Section*/
+.biography-card {
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.09);
     border-radius: 12px;
     padding: 70px 20px;
@@ -839,10 +834,31 @@ footer .follow-us .fa-linkedin {
     font-size: 18px;
 }
 
-/*----------------Trainers-Details-Section-End------------------*/
-/*----------------****************************------------------*/
+/*Our-Classes-Page*/
+.join-section .join-card {
+    padding: 40px 35px 40px 35px;
+    box-shadow: 5px 4px 13px 0px rgba(0, 0, 0, 0.05);
+    margin-bottom: 3em;
+    transition: .8s ease;
+}
 
-/*-----------------------About-Section-----------------------------*/
+.join-section .join-card i {
+    color: var(--primary-text-color);
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.join-section .join-card:hover {
+    box-shadow: 5px 4px 13px 0px rgba(0, 0, 0, 0.3);
+}
+
+/*Our-classes-Section*/
+.our-classes-section .classes-card {
+    margin: 1em 0em;
+}
+
+/*-------------About-Page-------------*/
+/*-------------*********-------------*/
 /*Location-Section*/
 .location-section .location-card i {
     width: 60px;
@@ -862,26 +878,4 @@ footer .follow-us .fa-linkedin {
 .location-section .location-info span {
     font-size: 22px;
     font-weight: 500;
-}
-
-/*Our-Classes-Page*/
-.join-section .join-card {
-    padding: 40px 35px 40px 35px;
-    box-shadow: 5px 4px 13px 0px rgba(0, 0, 0, 0.05);
-    margin-bottom: 3em;
-}
-
-.join-section .join-card i {
-    color: var(--primary-text-color);
-    font-size: 25px;
-    margin-bottom: 12px;
-}
-
-.join-section .join-card:hover {
-    box-shadow: 5px 4px 13px 0px rgba(0, 0, 0, 0.3);
-}
-
-/*Our-classes-Section*/
-.our-classes-section .classes-card {
-    margin: 1em 0em;
 }
