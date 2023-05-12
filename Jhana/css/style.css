@@ -842,6 +842,7 @@ footer .follow-us .fa-linkedin {
 /*----------------Trainers-Details-Section-End------------------*/
 /*----------------****************************------------------*/
 
+/*-----------------------About-Section-----------------------------*/
 /*Location-Section*/
 .location-section .location-card i {
     width: 60px;
@@ -854,10 +855,33 @@ footer .follow-us .fa-linkedin {
     border: 1px solid var(--primary-text-color);
 }
 
-.location-section .location-info{
+.location-section .location-info {
     margin-top: 1em;
 }
-.location-section .location-info span{
+
+.location-section .location-info span {
     font-size: 22px;
     font-weight: 500;
+}
+
+/*Our-Classes-Page*/
+.join-section .join-card {
+    padding: 40px 35px 40px 35px;
+    box-shadow: 5px 4px 13px 0px rgba(0, 0, 0, 0.05);
+    margin-bottom: 3em;
+}
+
+.join-section .join-card i {
+    color: var(--primary-text-color);
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.join-section .join-card:hover {
+    box-shadow: 5px 4px 13px 0px rgba(0, 0, 0, 0.3);
+}
+
+/*Our-classes-Section*/
+.our-classes-section .classes-card {
+    margin: 1em 0em;
 }
