@@ -753,14 +753,8 @@ footer .follow-us .fa-linkedin {
 }
 
 /*Trainer*/
-.our-trainer-section .trainer-img {
-    border-top-right-radius: 12px;
-    border-top-left-radius: 12px;
-    overflow: hidden;
-}
-
 .our-trainer-section .trainer-info {
-    box-shadow: 0 0 25px rgba(0, 0, 0, 0.09);
+    box-shadow: 3px 9px 10px rgba(53, 52, 52, 0.11);
     border-bottom-right-radius: 12px;
     border-bottom-left-radius: 12px;
     padding: 25px 0px;
@@ -772,14 +766,57 @@ footer .follow-us .fa-linkedin {
 
 .our-trainer-section .trainer-img img {
     transition: .8s ease;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
 }
 
-.our-trainer-section .trainer-card:hover img {
-    transform: scale(1.1);
+.our-trainer-section .trainer-img {
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
 }
 
-.our-trainer-section .trainer-card:hover .trainer-info {
-    box-shadow: 3px 9px 10px rgba(53, 52, 52, 0.11);
+/*Our-Trainer Overlay*/
+.trainer-img-overlay span {
+    display: block;
+    line-height: 35px;
+}
+.trainer-img-overlay span i{
+    margin: 0px 10px;
+}
+.trainer-img-overlay span:nth-child(5){
+    font-size: 16px;
+}
+
+.trainer-img-overlay img {
+    border-radius: 50% !important;
+    width: 50%;
+    border: 2px solid #fff;
+}
+
+.trainer-img {
+    position: relative;
+}
+
+.trainer-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: var(--primary-text-color);
+    color: #fff;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease-out;
+    border-radius: 12px;
+}
+
+.trainer-overlay-item {
+    padding: 55px 0px;
+}
+
+.trainer-img:hover .trainer-img-overlay {
+    height: 100%;
 }
 
 /*Biography-Section*/
