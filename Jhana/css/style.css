@@ -578,11 +578,17 @@ article {
     width: 100%;
     z-index: 10;
     background-color: #fff;
-    /* margin-bottom: 466px; */
+    margin-bottom: 421px;
 }
 
 footer {
-    padding: 2.5em;   
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-section {
+    padding: 2.5em;
 }
 
 .footer-section .footer-card h5 {
@@ -592,9 +598,17 @@ footer {
     position: relative;
 }
 
+.footer-section .footer-card a:hover {
+    color: var(--primary-text-color);
+}
+
 .footer-section .footer-card h5:hover {
     color: var(--primary-text-color);
     cursor: pointer;
+}
+
+.footer-section .footer-card a {
+    transition: .2s ease;
 }
 
 .footer-section .footer-card h5:after {
@@ -614,8 +628,9 @@ footer {
 }
 
 .footer-section .footer-card {
-    padding-left:1em;
+    padding-left: 1em;
 }
+
 .footer-section .footer-card span {
     display: block;
     margin-bottom: 8px;
@@ -630,7 +645,7 @@ footer {
     display: inline-block;
     margin: 0;
     padding-left: 5px;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .footer-section .follow-us i {
@@ -646,6 +661,14 @@ footer {
     text-align: center;
 }
 
+/*Sub-Footer*/
+.sub-footer {
+    padding: 1em 0em;
+}
+
+.sub-footer p {
+    margin: 0;
+}
 
 /*Scroll Button*/
 .scroll-section .scroll {
