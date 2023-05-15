@@ -113,11 +113,12 @@ header .nav-item .navitem-highlight {
 header .nav-item a.nav-link:hover {
     color: var(--primary-text-color);
 }
-.navbar-menu .navbar-en p{
+
+.navbar-menu .navbar-en p {
     width: 60px;
     height: 60px;
     line-height: 60px;
-    border-radius: 50%;  
+    border-radius: 50%;
     margin: 0;
     text-align: center;
     background-color: var(--primary-text-color);
@@ -575,13 +576,13 @@ article {
     width: 100%;
     z-index: 10;
     background-color: #fff;
-    margin-bottom: 421px;
+    /* margin-bottom: 421px; */
 }
 
 footer {
-    position: fixed;
+    /* position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 100%; */
 }
 
 .footer-section {
@@ -726,10 +727,11 @@ footer {
     color: #fff;
 }
 
-.hero-section .hero-home::after{
+.hero-section .hero-home::after {
     content: " /";
 }
-.hero-section .hero-home:hover a{
+
+.hero-section .hero-home:hover a {
     color: var(--primary-text-color);
 }
 
@@ -916,4 +918,89 @@ footer {
 .location-section .location-info span {
     font-size: 22px;
     font-weight: 500;
+}
+
+/*------------------------------------*/
+/*Media Query*/
+/*1366 1024 768 648 576 480 400*/
+@media(max-width : 1365px) {
+    .features-section .features-card-menu {
+        padding: 20px 0px;
+    }
+
+    .benefit-section .benefit-card-img img {
+        margin: 20px 0px 0px 0px;
+    }
+
+
+    @media(max-width : 1024px) {
+        .features-section .col-md-3 {
+            flex: 0 0 auto;
+            width: 50%;
+            margin-bottom: 12px;
+        }
+
+        footer .col-md-3 {
+            width: 50%;
+        }
+
+    }
+
+    @media(max-width : 768px) {
+        nav .navbar-en {
+            display: none;
+        }
+
+        header .navbar-brand {
+            width: 25%;
+        }
+
+        .benefit-section .col-md-6 {
+            flex: 0 0 auto;
+            width: 100%;
+            margin-bottom: 12px;
+        }
+
+        .benefit-section .benefit-card-img {
+            text-align: center;
+        }
+
+        .trainer-section .col-md-3 {
+            width: 50%;
+        }
+    }
+
+    @media(max-width : 648px) {
+        .footer-section {
+            /* padding: 0em; */
+        }
+
+        .footer-section .col-md-3 {
+            padding: 0px;
+        }
+
+        .footer-section .footer-card {
+            padding: 0px;
+        }
+
+        footer .usefull-link {
+            padding: 12px;
+        }
+    }
+
+    @media(max-width : 576px) {
+        .trainer-section .col-md-3 {
+            width: 100%;
+        }
+
+        footer .col-md-3 {
+            width: 100%;
+            text-align: center;
+        }
+
+        .footer-section .footer-card h5:after {
+            left: 40%;
+        }
+    }
+
 }

@@ -5,6 +5,9 @@ $('.owl-carousel-mini').owlCarousel({
         0: {
             items: 1
         },
+        576: {
+            items: 2
+        },
         600: {
             items: 3
         },
@@ -22,8 +25,8 @@ $('.owl-carousel-review').owlCarousel({
         0: {
             items: 1
         },
-        600: {
-            items: 3
+        768: {
+            items: 1
         },
         1000: {
             items: 2
@@ -41,10 +44,13 @@ $('.owl-carousel').owlCarousel({
         0: {
             items: 1
         },
-        600: {
-            items: 3
+        768: {
+            items: 1
         },
-        1000: {
+        1024: {
+            items: 2
+        },
+        1320: {
             items: 3
         }
     }
@@ -64,7 +70,7 @@ window.addEventListener('scroll', () => {
 scrollbtn.addEventListener('click', () => {
     window.scrollTo({
         top: 0,
-        behavior:"smooth",
+        behavior: "smooth",
     })
 });
 
