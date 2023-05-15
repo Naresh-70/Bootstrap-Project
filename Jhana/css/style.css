@@ -14,6 +14,7 @@ body {
 a {
     text-decoration: none;
     display: inline-block;
+    color: #fff;
 }
 
 h3 {
@@ -89,7 +90,7 @@ span {
     padding: 0em 5.5em;
 }
 
-header .logo {
+header .navbar-brand {
     width: 12%;
 }
 
@@ -724,6 +725,14 @@ footer {
 .hero-section .main-title span {
     color: #fff;
 }
+
+.hero-section .hero-home::after{
+    content: " /";
+}
+.hero-section .hero-home:hover a{
+    color: var(--primary-text-color);
+}
+
 
 /*Center-section*/
 .balance-section .balance-card {
