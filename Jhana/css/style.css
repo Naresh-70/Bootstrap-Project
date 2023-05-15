@@ -85,6 +85,10 @@ span {
     font-weight: 500;
 }
 
+.flex {
+    display: flex;
+}
+
 /*Navbar*/
 .navbar-menu {
     padding: 0em 5.5em;
@@ -181,28 +185,34 @@ header .nav-item a.nav-link:hover {
 }
 
 /*Features*/
+
 .features-section .features-card-menu {
-    padding: 30px 30px 0px 30px;
-    border-radius: 10px;
-    border: 1px solid gray;
+    padding: 30px 19px 28px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    gap: 12px;
+    margin: 0px 14px;
     transition: .5s ease;
 }
 
-.features-card-menu:hover .features-card-img img {
-    filter: brightness(0) invert(1);
+.features-section .col-md-3 {
+    padding: 0;
+}
+
+.features-section .features-card-image {
+    width: 60%;
 }
 
 .features-section .features-card-info h3 {
     font-size: 18px;
 }
 
-.features-card-menu:hover p {
-    color: #fff;
+.features-section .features-card-menu:hover {
+    background-color: var(--primary-text-color);
 }
 
-.features-card-menu:hover {
-    background-color: var(--primary-text-color);
-    color: #fff;
+.features-card-menu:hover .features-card-image img {
+    filter: brightness(0) invert(1);
 }
 
 /*Yoga Benefit*/
@@ -685,6 +695,128 @@ footer {
     z-index: 99999;
 }
 
+/*------------------------------------*/
+/*Media Query Page*/
+/*1366 1024 768 648 576 480 400*/
+@media(max-width : 1365px) {
+    .benefit-section .benefit-card-img img {
+        margin: 20px 0px 0px 0px;
+    }
+}
+
+@media(max-width : 1024px) {
+
+    .features-section .col-md-3 {
+        width: 50%;
+    }
+
+    .features-section .features-card-image {
+        width: 20%;
+    }
+
+    .features-section .features-card-menu {
+        gap: 35px;
+        margin: 14px;
+    }
+
+    .trainer-section .col-md-3 {
+        width: 35%;
+        margin-left: 100px;
+    }
+
+    footer .col-md-3 {
+        width: 35%;
+        padding: 0;
+        margin-left: 100px;
+    }
+}
+
+
+@media(max-width : 768px) {
+    nav .navbar-en {
+        display: none;
+    }
+
+    header .navbar-brand {
+        width: 25%;
+    }
+
+    .benefit-section .col-md-6 {
+        flex: 0 0 auto;
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .benefit-section .benefit-card-img {
+        text-align: center;
+    }
+
+    .features-section .features-card-image {
+        width: 60%;
+    }
+
+    .trainer-section .col-md-3 {
+        width: 50%;
+        margin-left: 0;
+    }
+
+    footer .col-md-3 {
+        margin: 0;
+        width: 50%;
+    }
+}
+
+@media(max-width : 648px) {
+    header .navbar-brand {
+        width: 35%;
+    }
+
+    .features-section .col-md-3 {
+        width: 100%;
+    }
+
+    .features-section .features-card-image {
+        width: 25%;
+    }
+
+}
+
+@media(max-width : 576px) {
+
+    header .navbar-brand {
+        width: 35%;
+    }
+
+    .trainer-section .trainer-img img {
+        border-radius: 12px;
+    }
+
+    .trainer-section .col-md-3 {
+        width: 80%;
+    }
+
+    footer .col-md-3 {
+        width: 100%;
+        padding-left: 100px;
+    }
+}
+
+@media(max-width : 480px) {
+
+    header .navbar-brand {
+        width: 35%;
+    }
+
+    .trainer-section .col-md-3 {
+        margin-left: 45px;
+    }
+
+    footer .col-md-3 {
+        padding-left: 0;
+    }
+
+}
+
 /*------------Home Section The End----------*/
 /*------------********************----------*/
 
@@ -897,6 +1029,64 @@ footer {
     margin: 1em 0em;
 }
 
+
+/*------------------------------------*/
+/*Media Query Trainer Page*/
+/*1366 1024 768 648 576 480 400*/
+@media(max-width : 1366px) {
+    .benefit-section .benefit-card-img img {
+        margin: 20px 0px 0px 0px;
+    }
+}
+
+@media(max-width:1024px) {
+    .our-trainer-section .col-md-3 {
+        width: 33%;
+    }
+}
+
+@media(max-width:768px) {
+    .biography-section .col-md-5 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .biography-section .col-md-7 {
+        width: 100%;
+        margin-top: 35px;
+    }
+
+    .classes-section .col-md-4 {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .join-section .col-md-4 {
+        width: 50%;
+    }
+}
+
+@media(max-width:768px) {
+    .balance-section .col-md-4 {
+        margin: 30px 0px;
+    }
+
+    .our-trainer-section .col-md-3 {
+        width: 50%;
+    }
+}
+
+@media(max-width:768px) {
+    .our-trainer-section .col-md-3 {
+        width: 100%;
+    }
+
+    .join-section .col-md-4 {
+        width: 100%;
+        margin-top: 30px 0px;
+    }
+}
+
 /*-------------About-Page-------------*/
 /*-------------*********-------------*/
 /*Location-Section*/
@@ -919,88 +1109,15 @@ footer {
     font-size: 22px;
     font-weight: 500;
 }
-
 /*------------------------------------*/
-/*Media Query*/
+/*Media Query About Page*/
 /*1366 1024 768 648 576 480 400*/
-@media(max-width : 1365px) {
-    .features-section .features-card-menu {
-        padding: 20px 0px;
+
+@media(max-width:648px){
+    .location-section .col-md-4{
+        margin: 30px 0px;
     }
-
-    .benefit-section .benefit-card-img img {
-        margin: 20px 0px 0px 0px;
+    footer .col-md-3 {
+        padding-left:0;
     }
-
-
-    @media(max-width : 1024px) {
-        .features-section .col-md-3 {
-            flex: 0 0 auto;
-            width: 50%;
-            margin-bottom: 12px;
-        }
-
-        footer .col-md-3 {
-            width: 50%;
-        }
-
-    }
-
-    @media(max-width : 768px) {
-        nav .navbar-en {
-            display: none;
-        }
-
-        header .navbar-brand {
-            width: 25%;
-        }
-
-        .benefit-section .col-md-6 {
-            flex: 0 0 auto;
-            width: 100%;
-            margin-bottom: 12px;
-        }
-
-        .benefit-section .benefit-card-img {
-            text-align: center;
-        }
-
-        .trainer-section .col-md-3 {
-            width: 50%;
-        }
-    }
-
-    @media(max-width : 648px) {
-        .footer-section {
-            /* padding: 0em; */
-        }
-
-        .footer-section .col-md-3 {
-            padding: 0px;
-        }
-
-        .footer-section .footer-card {
-            padding: 0px;
-        }
-
-        footer .usefull-link {
-            padding: 12px;
-        }
-    }
-
-    @media(max-width : 576px) {
-        .trainer-section .col-md-3 {
-            width: 100%;
-        }
-
-        footer .col-md-3 {
-            width: 100%;
-            text-align: center;
-        }
-
-        .footer-section .footer-card h5:after {
-            left: 40%;
-        }
-    }
-
 }
