@@ -1,7 +1,7 @@
 /*Google-Font-Link*/
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Dosis:wght@300;400;500&family=Poppins:wght@300;400;500&family=Sanchez&display=swap');
 
-/*reset*/
+/*Reset*/
 body {
     font-family: 'poppins', sans-serif;
 }
@@ -90,12 +90,26 @@ span {
 }
 
 /*Navbar*/
+.darkHeader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: rgba(157, 157, 157, 0.2) 0px 4px 10px;
+}
+
 .navbar-menu {
     padding: 0em 5.5em;
 }
 
 header .navbar-brand {
-    width: 12%;
+    width: 11%;
+}
+
+header.darkHeader .navbar-brand {
+    width: 11%;
 }
 
 header .navbar {
@@ -103,7 +117,7 @@ header .navbar {
 }
 
 header .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 28px 25px;
+    padding: 26px 25px;
 }
 
 nav .nav-item a {
@@ -119,9 +133,9 @@ header .nav-item a.nav-link:hover {
 }
 
 .navbar-menu .navbar-en p {
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
     border-radius: 50%;
     margin: 0;
     text-align: center;
@@ -129,6 +143,12 @@ header .nav-item a.nav-link:hover {
     color: #fff;
     font-size: 18px;
     cursor: pointer;
+}
+
+nav.darkHeader .navbar-en p {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu {
@@ -782,7 +802,7 @@ footer {
 }
 
 
-@media(max-width : 768px) {   
+@media(max-width : 768px) {
 
     nav .navbar-en {
         display: none;

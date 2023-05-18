@@ -78,16 +78,12 @@ scrollbtn.addEventListener('click', () => {
     })
 });
 
-
 $(window).scroll(function () {
     var scroll = $(window).scrollTop();
 
-    if (scroll >= 100) {
+    if (scroll >= 720) {
         $(".bootsnav").addClass("darkHeader");
     } else {
         $(".bootsnav").removeClass("darkHeader");
     }
 });
-
-
-
