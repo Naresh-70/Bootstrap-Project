@@ -1,7 +1,7 @@
 $('.owl-carousel-mini').owlCarousel({
     loop: true,
     margin: 0,
-    dots:false,
+    dots: false,
     responsive: {
         0: {
             items: 1
@@ -13,10 +13,10 @@ $('.owl-carousel-mini').owlCarousel({
             items: 3
         },
         1024: {
-            items: 4,           
+            items: 4,
         },
-        1366:{
-            items:5
+        1366: {
+            items: 5
         }
     }
 })
@@ -76,6 +76,17 @@ scrollbtn.addEventListener('click', () => {
         top: 0,
         behavior: "smooth",
     })
+});
+
+
+$(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 100) {
+        $(".bootsnav").addClass("darkHeader");
+    } else {
+        $(".bootsnav").removeClass("darkHeader");
+    }
 });
 
 
