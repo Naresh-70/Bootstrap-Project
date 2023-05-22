@@ -87,3 +87,4 @@ $(window).scroll(function () {
         $(".bootsnav").removeClass("darkHeader");
     }
 });
+

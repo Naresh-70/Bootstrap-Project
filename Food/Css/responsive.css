@@ -1,0 +1,64 @@
+@media(max-width:1199px) {
+
+    /* Custom CSS */
+    h1 {
+        font-size: 65px
+    }
+}
+
+@media(max-width:991px) {
+
+    /* Custom CSS */
+    h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    /* 2 Navbar */
+    .header-section .navbar-brand img {
+        max-width: 67px;
+    }
+
+    .header-scrolled {
+        height: auto;
+    }
+
+    .header-section .navbar-collapse {
+        margin-top: -2px;
+    }
+
+    .header-section .menu-navbar-nav {
+        text-align: center;
+        background-color: var(--bg-white);
+        padding-bottom: 15px;
+    }
+
+    .header-section .nav-item .nav-link {
+        margin-top: 15px;
+    }
+
+    .banner-section {
+        padding-top: 70px;
+    }
+
+    .banner-section .top-menu .card {
+        height: 200px;
+    }
+}
+
+@media(max-width:767px) {
+
+    /* Custom CSS */
+    h1 {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+}

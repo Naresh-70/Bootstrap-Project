@@ -98,6 +98,7 @@ span {
     width: 100%;
     background-color: #fff;
     box-shadow: rgba(157, 157, 157, 0.2) 0px 4px 10px;
+    transition: .2s;
 }
 
 .navbar-menu {
@@ -610,7 +611,7 @@ main {
     position: relative;
     width: 100%;
     z-index: 99;
-    background-color: #fff;
+    background-color: #F7F8FC;
     margin-bottom: 425px;
     height: 100%;
 }
@@ -619,7 +620,6 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    /* height: 100%; */
 }
 
 .footer-section {
@@ -937,17 +937,24 @@ footer {
     }
 }
 
-/* New-One */
+
 /*------------Home Section The End----------*/
 /*------------********************----------*/
 
 /*------------Trainers-Page-Start-----------*/
 /*------------********************----------*/
 
-/*Hero Secton*/
 
+/* Utility Classes */
+.trainer-section-page .card {
+    border: none;
+}
+
+/*Hero Secton*/
 .hero-section {
     position: relative;
+    top: 0;
+    left: 0;
 }
 
 .center-image {
@@ -1128,12 +1135,38 @@ footer {
     font-size: 18px;
 }
 
-/*Our-Classes-Page*/
+/*Our-Join-Page*/
 .join-section .join-card {
     padding: 40px 35px 40px 35px;
-    box-shadow: 5px 4px 13px 0px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
+    border-bottom: 5px solid black;
+    border-radius: 6px;
     margin-bottom: 3em;
     transition: .8s ease;
+}
+
+.join-section .join-card-1 {
+    border-bottom-color: rgba(1, 162, 142, 0.39);
+}
+
+.join-section .join-card-2 {
+    border-bottom-color: rgba(229, 48, 62, 0.39);
+}
+
+.join-section .join-card-3 {
+    border-bottom-color: rgba(55, 19, 253, 0.39);
+}
+
+.join-section .join-card-4 {
+    border-bottom-color: rgba(19, 120, 175, 0.39);
+}
+
+.join-section .join-card-5 {
+    border-bottom-color: rgba(26, 158, 253, 0.39);
+}
+
+.join-section .join-card-6 {
+    border-bottom-color: rgba(249, 113, 21, 0.39);
 }
 
 .join-section .join-card i {
@@ -1143,7 +1176,7 @@ footer {
 }
 
 .join-section .join-card:hover {
-    box-shadow: 5px 4px 13px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
 }
 
 /*Our-classes-Section*/
