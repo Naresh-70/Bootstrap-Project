@@ -1,20 +1,35 @@
 /*Google-Font-Link*/
 @import url('https://fonts.googleapis.com/css2?family=Arvo&family=Dosis:wght@300;400;500&family=Poppins:wght@300;400;500&family=Sanchez&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
 
 /*Reset*/
 body {
-    font-family: 'poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 :root {
+    /* Text-Color */
     --primary-text-color: #00AD8D;
     --secondary-text-color: #F05C5C;
+    --text-white: #fff;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--bg-white);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-text-color);
 }
 
 a {
     text-decoration: none;
     display: inline-block;
-    color: #fff;
+    color: var(--text-white);
 }
 
 h3 {
@@ -33,13 +48,9 @@ h5 {
 }
 
 p {
-    font-size: 13px;
+    /* font-size: 16px; */
     color: #606060;
     line-height: 28px;
-}
-
-span {
-    font-size: 14px;
 }
 
 /* Utility Classes */
@@ -56,10 +67,11 @@ span {
     padding: 15px 30px;
     font-size: 18px;
     border-radius: 30px;
-    color: #fff;
+    color: var(--text-white);
     font-weight: 500;
     box-shadow: 5px 4px 13px 0px rgba(239.99999999999997, 92.00000000000001, 95, 0.33);
     transition: .8s ease;
+    border: none;
 }
 
 .our-button:hover {
@@ -73,14 +85,14 @@ span {
 .title {
     font-size: 2.5em;
     color: #000;
-    font-weight: 500;
+    font-weight: 600;
     font-family: 'arvo', sans-serif;
     margin: 18px 0px;
     line-height: 50px;
 }
 
 .sub-title {
-    font-size: 16px;
+    font-size: 18px;
     color: var(--primary-text-color);
     font-weight: 500;
 }
@@ -88,6 +100,33 @@ span {
 .flex {
     display: flex;
 }
+
+.color-code-1 {
+    border-bottom-color: rgba(1, 162, 142, 0.39) !important;
+}
+
+.color-code-2 {
+    border-bottom-color: rgba(229, 48, 62, 0.39) !important;
+}
+
+.color-code-3 {
+    border-bottom-color: rgba(55, 19, 253, 0.39) !important;
+}
+
+.color-code-4 {
+    border-bottom-color: rgba(19, 120, 175, 0.39) !important;
+}
+
+.color-code-5 {
+    border-bottom-color: rgba(26, 158, 253, 0.39) !important;
+}
+
+.color-code-6 {
+    border-bottom-color: rgba(249, 113, 21, 0.39) !important;
+}
+
+/*------------Home-Page-Start-------------*/
+/*===========================================*/
 
 /*Navbar*/
 .darkHeader {
@@ -123,6 +162,7 @@ header .navbar-expand-lg .navbar-nav .nav-link {
 
 nav .nav-item a {
     color: #000;
+    font-size: 18px;
 }
 
 header .nav-item .navitem-highlight {
@@ -141,7 +181,7 @@ header .nav-item a.nav-link:hover {
     margin: 0;
     text-align: center;
     background-color: var(--primary-text-color);
-    color: #fff;
+    color: var(--text-white);
     font-size: 18px;
     cursor: pointer;
 }
@@ -194,7 +234,7 @@ nav.darkHeader .navbar-en p {
 
 .carousel-section .carousel-caption p {
     font-size: 30px;
-    color: #fff;
+    color: var(--text-color);
 }
 
 .carousel-caption {
@@ -208,7 +248,7 @@ nav.darkHeader .navbar-en p {
 /*Features*/
 
 .features-section .features-card-menu {
-    padding: 30px 19px 28px;
+    padding: 30px 19px 0px;
     border-radius: 8px;
     border: 1px solid #aaa;
     gap: 12px;
@@ -225,7 +265,8 @@ nav.darkHeader .navbar-en p {
 }
 
 .features-section .features-card-info h3 {
-    font-size: 18px;
+    font-size: 21px;
+    font-weight: 500;
 }
 
 .features-section .features-card-menu:hover {
@@ -233,7 +274,7 @@ nav.darkHeader .navbar-en p {
 }
 
 .features-section .features-card-info:hover p {
-    color: #fff;
+    color: var(--text-white);
 }
 
 .features-card-menu:hover .features-card-image img {
@@ -251,7 +292,6 @@ nav.darkHeader .navbar-en p {
 }
 
 .benefit-section .benefit-card-info p {
-    font-size: 14px;
     word-spacing: 1px;
 }
 
@@ -264,7 +304,8 @@ nav.darkHeader .navbar-en p {
 .benefit-section .benefit-card-point i {
     color: var(--primary-text-color);
     margin-right: 8px;
-    font-size: 20px;
+    font-size: 16px;
+    vertical-align: middle;
 }
 
 /*Mini Section*/
@@ -395,13 +436,12 @@ nav.darkHeader .navbar-en p {
 
 .owl-theme .owl-nav [class*='owl-']:hover {
     background: transparent;
-    color: #FFF;
+    color: var(--text-white);
     text-decoration: none;
 }
 
 /*Review*/
 .review-section .review-card {
-    background-color: #fff;
     padding: 25px 50px;
     border-radius: 10px;
     box-shadow: 0 0 25px rgba(0, 0, 0, 0.09);
@@ -410,10 +450,6 @@ nav.darkHeader .navbar-en p {
 
 .review-section .review-card:hover {
     box-shadow: 3px 9px 10px rgba(53, 52, 52, 0.11);
-}
-
-.review-section .review-card p {
-    font-size: 14px;
 }
 
 .review-section .user-review-info {
@@ -565,13 +601,16 @@ nav.darkHeader .navbar-en p {
 
 /*Subscribe*/
 .subscribe-section {
-    /* background-color: #aaa; */
     background: url(../images/asset\ 54.jpeg) no-repeat center;
     background-size: cover;
 }
 
 .subscribe-section .main-title {
     margin: 4em;
+}
+
+.subscribe-section .main-title span {
+    font-size: 20px;
 }
 
 .subscribe-section .subscribe-input {
@@ -603,7 +642,7 @@ nav.darkHeader .navbar-en p {
     outline: none;
     border: none;
     background-color: var(--secondary-text-color);
-    color: #fff;
+    color: var(--text-white);
 }
 
 /*Footer-Section*/
@@ -613,7 +652,6 @@ main {
     z-index: 99;
     background-color: #F7F8FC;
     margin-bottom: 425px;
-    height: 100%;
 }
 
 footer {
@@ -627,7 +665,7 @@ footer {
 }
 
 .footer-section .footer-card h5 {
-    font-size: 1.5em;
+    font-size: 1.8em;
     margin: 1.5em 0em;
     transition: .2s ease;
     position: relative;
@@ -680,7 +718,6 @@ footer {
     display: inline-block;
     margin: 0;
     padding-left: 5px;
-    font-size: 15px;
 }
 
 .footer-section .follow-us i {
@@ -716,14 +753,13 @@ footer {
     line-height: 50px;
     text-align: center;
     border-radius: 50px;
-    color: #fff;
+    color: var(--text-white);
     display: none;
     cursor: pointer;
     z-index: 99999;
 }
 
-/*------------------------------------*/
-/*Media Query Home Page*/
+/* ===========Media-Query-Home-Page=============*/
 /*1366 1024 768 648 576 480 400*/
 
 @media(max-width : 1366px) {
@@ -937,39 +973,38 @@ footer {
     }
 }
 
+/*-------------Home-Page-End--------------*/
+/*=========================================*/
 
-/*------------Home Section The End----------*/
-/*------------********************----------*/
-
-/*------------Trainers-Page-Start-----------*/
-/*------------********************----------*/
-
-
+/*------------Trainers-Page-Start----------*/
+/*=========================================*/
 /* Utility Classes */
 .trainer-section-page .card {
     border: none;
 }
 
+.primary-button i {
+    vertical-align: middle;
+    margin-left: 2px;
+}
+
 /*Hero Secton*/
 .hero-section {
     position: relative;
-    top: 0;
-    left: 0;
-}
-
-.center-image {
     height: 350px;
-    background: url(../images/asset\ 46.jpeg) no-repeat fixed;
-    background-size: contain;
+    object-fit: cover;
+    background: url(../images/asset\ 46.jpeg) fixed;
+    background-size: cover;
 }
 
-.color-section {
-    content: "";
+.hero-section::before {
+    content: '';
+    display: block;
     position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
     background-color: rgba(27, 35, 54, 0.7);
 }
 
@@ -981,11 +1016,11 @@ footer {
 }
 
 .hero-section .main-title h2 {
-    color: #fff;
+    color: var(--text-white);
 }
 
 .hero-section .main-title span {
-    color: #fff;
+    color: var(--text-white);
 }
 
 .hero-section .hero-home::after {
@@ -1067,7 +1102,7 @@ footer {
     left: 0;
     bottom: 0;
     background-color: var(--primary-text-color);
-    color: #fff;
+    color: var(--text-white);
     overflow: hidden;
     width: 100%;
     height: 0;
@@ -1138,35 +1173,11 @@ footer {
 /*Our-Join-Page*/
 .join-section .join-card {
     padding: 40px 35px 40px 35px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
+    box-shadow: 0 4px 15px 3px rgba(0, 0, 0, .1), 0 2px 4px -2px rgba(0, 0, 0, .1);
     border-bottom: 5px solid black;
     border-radius: 6px;
     margin-bottom: 3em;
     transition: .8s ease;
-}
-
-.join-section .join-card-1 {
-    border-bottom-color: rgba(1, 162, 142, 0.39);
-}
-
-.join-section .join-card-2 {
-    border-bottom-color: rgba(229, 48, 62, 0.39);
-}
-
-.join-section .join-card-3 {
-    border-bottom-color: rgba(55, 19, 253, 0.39);
-}
-
-.join-section .join-card-4 {
-    border-bottom-color: rgba(19, 120, 175, 0.39);
-}
-
-.join-section .join-card-5 {
-    border-bottom-color: rgba(26, 158, 253, 0.39);
-}
-
-.join-section .join-card-6 {
-    border-bottom-color: rgba(249, 113, 21, 0.39);
 }
 
 .join-section .join-card i {
@@ -1185,8 +1196,8 @@ footer {
 }
 
 
-/*------------------------------------*/
-/*Media Query Trainer Page*/
+/* ===========Media-Query-Trainer-Page=============*/
+
 /*1366 1024 768 648 576 480 400*/
 @media(max-width : 1366px) {
     .benefit-section .benefit-card-img img {
@@ -1242,8 +1253,19 @@ footer {
     }
 }
 
-/*-------------About-Page-------------*/
-/*-------------*********-------------*/
+/*-----------Trainers-Page-End-----------*/
+/*=========================================*/
+
+/*------------Gallery-Section-End----------*/
+/*=========================================*/
+/* Gallery-section */
+.gallery-section .nav-tabs {
+    border: none;
+}
+
+/*-----------About-Page-Start-----------*/
+/*=========================================*/
+
 /*Location-Section*/
 .location-section .location-card i {
     width: 60px;
@@ -1265,8 +1287,10 @@ footer {
     font-weight: 500;
 }
 
-/*------------------------------------*/
-/*Media Query About Page*/
+/*--------------About-Page-End-------------*/
+/*=========================================*/
+
+/* ========Media-Query-About-Page===========*/
 /*1366 1024 768 648 576 480 400*/
 
 @media(max-width:648px) {
