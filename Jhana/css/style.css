@@ -98,9 +98,9 @@ p {
     font-weight: 500;
 }
 
-.navitem-highlight {
+/* .navitem-highlight {
     color: var(--primary-text-color) !important;
-}
+} */
 
 .flex {
     display: flex;
@@ -130,11 +130,12 @@ p {
     border-bottom-color: rgba(249, 113, 21, 0.39) !important;
 }
 
+
 /*------------Home-Page-Start-------------*/
 /*===========================================*/
 
 /*Navbar*/
-.darkHeader {
+.header-scrolled {
     position: fixed;
     top: 0;
     left: 0;
@@ -150,12 +151,12 @@ p {
 }
 
 header .navbar-brand {
-    width: 11%;
+    width: 13%;
     padding: 0;
 }
 
-header.darkHeader .navbar-brand {
-    width: 9%;
+header .header-scrolled .navbar-brand {
+    width: 12%;
 }
 
 header .navbar {
@@ -163,7 +164,7 @@ header .navbar {
 }
 
 header .navbar-expand-lg .navbar-nav .nav-link {
-    padding: 0px 25px;
+    padding: 18px 25px;
 }
 
 nav .nav-item a {
@@ -171,14 +172,18 @@ nav .nav-item a {
     font-size: 18px;
 }
 
+nav .nav-item a:is(:link, :active, :visited).active {
+    color: var(--primary-text-color);
+}
+
 header .nav-item a.nav-link:hover {
     color: var(--primary-text-color);
 }
 
 .navbar-menu .navbar-en p {
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
     border-radius: 50%;
     margin: 0;
     text-align: center;
@@ -188,14 +193,14 @@ header .nav-item a.nav-link:hover {
     cursor: pointer;
 }
 
-header.darkHeader .navbar-en p {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
+header .header-scrolled .navbar-en p {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu {
-    border-top: 4px solid var(--primary-text-color);
+    border-top: 3px solid var(--primary-text-color);
     border-left: 4px solid var(--primary-text-color);
 }
 
@@ -209,6 +214,10 @@ header.darkHeader .navbar-en p {
 
 .dropdown:hover .dropdown-menu {
     display: block;
+}
+
+header ul li a.dropdown-item {
+    background-color: unset !important;
 }
 
 /*Main Carousel*/
@@ -1298,6 +1307,10 @@ footer {
     font-size: 20px;
     display: flex;
     gap: 30px;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: unset;
 }
 
 .gallery-section .nav-tabs li button {

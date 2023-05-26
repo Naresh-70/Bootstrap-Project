@@ -60,7 +60,7 @@ $('.owl-carousel').owlCarousel({
     }
 })
 
-
+//Bottom to top
 const scrollbtn = document.querySelector('.scroll');
 window.addEventListener('scroll', () => {
     if (window.pageYOffset > 300) {
@@ -78,13 +78,37 @@ scrollbtn.addEventListener('click', () => {
     })
 });
 
-$(window).scroll(function () {
-    var scroll = $(window).scrollTop();
+// Navbar
+// $(window).scroll(function () {
+//     var scroll = $(window).scrollTop();
 
-    if (scroll >= 720) {
-        $(".bootsnav").addClass("darkHeader");
+//     if (scroll >= 720) {
+//         $(".bootsnav").addClass("darkHeader");
+//     } else {
+//         $(".bootsnav").removeClass("darkHeader");
+//     }
+// });
+
+
+let nav = document.querySelector(".navbar");
+window.onscroll = function () {
+    if (document.documentElement.scrollTop > 720) {
+
+        nav.classList.add("header-scrolled");
     } else {
-        $(".bootsnav").removeClass("darkHeader");
+        nav.classList.remove("header-scrolled");
     }
-});
+}
+
+//Nav links
+const activePage = window.location;
+// console.log(activePage.pathname);
+const navLink = document.querySelectorAll('nav a').
+    forEach(link => {
+        if (link.href.includes(`${activePage}`)) {
+            // console.log(`${activePage}`);
+            link.classList.add('active');
+        }
+    })
+
 
