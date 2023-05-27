@@ -1207,7 +1207,6 @@ footer {
     margin: 1em 0em;
 }
 
-
 /* ===========Media-Query-Trainer-Page=============*/
 
 /*1366 1024 768 648 576 480 400*/
@@ -1279,7 +1278,7 @@ footer {
     border: none;
 }
 
-.gallery-section .gallery-trainers {
+.gallery-section .bg-gallery {
     background: linear-gradient(to right, #041308, #0b3317);
 }
 
@@ -1400,7 +1399,7 @@ footer {
 }
 
 /* gallery-Section -> Gallery-Teacher */
-.gallery-section .gallery-teachers {
+.gallery-section .bg-gallery {
     background: linear-gradient(to right, #041308, #0b3317);
 }
 
@@ -1494,6 +1493,24 @@ footer {
 .gallery-section #teacher-img-17 {
     background-image: url(../images/yoga\ teacher\ 17.jpg);
 }
+
+/* gallery-Section -> Light-Section */
+
+.light-section .light-gallery img {
+    width: 320px;
+    height: 200px;
+}
+
+.light-gallery img {
+    filter: grayscale(100%);
+    transition: 1s;
+    margin-bottom: 4px;
+}
+
+.light-gallery img:hover {
+    filter: grayscale(0%);
+}
+
 
 /*-----------About-Page-Start-----------*/
 /*=========================================*/

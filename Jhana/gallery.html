@@ -6,13 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery</title>
+
+    <!-- Light Box CSS -->
+    <link rel="stylesheet" href="css/lightbox.css">
+
     <!--Bootstrap Css CDN Link-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <!--Favicon Icon Link-->
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
     <!--Owl-Carousel-Css-Link-->
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.green.css">
+
     <!--Custom Css link-->
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -77,28 +84,28 @@
             <!--Hero-Section-End-->
 
             <!-- Gallery-Start -->
-            <section class="gallery-section">
-                <ul class="nav nav-tabs justify-content-center pb-5" id="myTab" role="tablist">
+            <div class="gallery-section">
+                <ul class="nav nav-tabs justify-content-center mb-5" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="home-tab" data-bs-toggle="tab"
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
                             data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
-                            aria-selected="true">Home</button>
+                            aria-selected="true">Trainer Gallery</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
                             data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane"
-                            aria-selected="false">Profile</button>
+                            aria-selected="false">Teacher Gallery</button>
                     </li>
                     <li class="nav-item" role="presentation">
                         <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
                             data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane"
-                            aria-selected="false">Contact</button>
-                    </li>                   
+                            aria-selected="false">Light Gallery</button>
+                    </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
                     <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
                         tabindex="0">
-                        <div class="gallery-trainers">
+                        <div class="gallery-trainers bg-gallery">
                             <div class="container">
                                 <div class="row">
                                     <h2 class="title text-center">Yoga Trainers</h2>
@@ -122,9 +129,10 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
                         tabindex="0">
-                        <div class="gallery-teachers">
+                        <div class="gallery-teachers bg-gallery">
                             <div class="container">
                                 <div class="row">
                                     <h2 class="title text-center before">Yoga Teachers</h2>
@@ -150,10 +158,71 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
+                        tabindex="0">
+                        <div class="light-section bg-gallery">
+                            <div class="container">
+                                <div class="row">
+                                    <h2 class="title text-center before">Light Gallery</h2>
+                                    <div class="col-12">
+                                        <div class="light-gallery section">
+                                            <a href="images/asset 61.jpg" data-lightbox="image-1" class="img-fluid">
+                                                <img src="images/asset 61.jpg" data-lightbox="image-1" class="img-fluid"
+                                                    alt="2">
+                                            </a>
+                                            <a href="images/asset 61.jpg" data-lightbox="image-1" class="img-fluid">
+                                                <img src="images/asset 61.jpg" data-lightbox="image-1" class="img-fluid"
+                                                    alt="2">
+                                            </a>
+                                            <a href="images/asset 62.jpg" data-lightbox="image-1" class="img-fluid">
+                                                <img src="images/asset 62.jpg" data-lightbox="image-1" class="img-fluid"
+                                                    alt="2">
+                                            </a>
+                                            <a href="images/asset 63.jpg" data-lightbox="image-1" class="img-fluid">
+                                                <img src="images/asset 63.jpg" data-lightbox="image-1" class="img-fluid"
+                                                    alt="2">
+                                            </a>
+                                            <a href="images/asset 64.jpg" data-lightbox="image-1" class="img-fluid">
+                                                <img src="images/asset 64.jpg" data-lightbox="image-1" class="img-fluid"
+                                                    alt="2">
+                                            </a>
+                                            <a href="images/asset 65.jpg" data-lightbox="image-1" class="img-fluid">
+                                                <img src="images/asset 65.jpg" data-lightbox="image-1" class="img-fluid"
+                                                    alt="2">
+                                            </a>
+                                            <a href="images/asset 66.jpeg" data-lightbox="image-1" class="img-fluid">
+                                                <img src="images/asset 66.jpeg" data-lightbox="image-1"
+                                                    class="img-fluid" alt="2">
+                                            </a>
+                                            <a href="images/asset 67.jpg" data-lightbox="image-1" class="img-fluid">
+                                                <img src="images/asset 67.jpg" data-lightbox="image-1" class="img-fluid"
+                                                    alt="2">
+                                            </a>
+                                            <a href="images/asset 68.jpg" data-lightbox="image-1" class="img-fluid">
+                                                <img src="images/asset 68.jpg" data-lightbox="image-1" class="img-fluid"
+                                                    alt="2">
+                                            </a>
+                                            <a href="images/asset 69.jpg" data-lightbox="image-1" class="img-fluid">
+                                                <img src="images/asset 69.jpg" data-lightbox="image-1" class="img-fluid"
+                                                    alt="2">
+                                            </a>
+                                            <a href="images/asset 61.jpg" data-lightbox="image-1" class="img-fluid">
+                                                <img src="images/asset 61.jpg" data-lightbox="image-1" class="img-fluid"
+                                                    alt="2">
+                                            </a>
+                                            <a href="images/asset 70.jpg" data-lightbox="image-1" class="img-fluid">
+                                                <img src="images/asset 70.jpg" data-lightbox="image-1" class="img-fluid"
+                                                    alt="2">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
-                    tabindex="0">None</div>
-            </section>
+            </div>
             <!-- Gallery-End -->
         </article>
         <!-- article-End -->
@@ -279,12 +348,19 @@
     <!--Owl-Carousel-JS-Link-->
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+
     <!--Bootstrap Js CDN Link-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
     <!--Font Awesome Icon Link-->
     <script src="https://kit.fontawesome.com/58e682b38d.js" crossorigin="anonymous"></script>
+
+    <!--Light Box JS-->
+    <script src="js/lightbox.js"></script>
+
     <!--Custom Js link-->
     <script src="js/script.js"></script>
+
     <!-- <div style="height: 50vh;"></div> -->
 </body>
 

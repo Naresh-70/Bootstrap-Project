@@ -111,4 +111,5 @@ const navLink = document.querySelectorAll('nav a').
         }
     })
 
+// Light Section.
 
