@@ -1362,11 +1362,11 @@ footer {
     background-image: url(../images/asset\ 59.jpg);
 }
 
-.gallery-section #gallery-img-7 {
+.gallery-section #gallery-img-8 {
     background-image: url(../images/asset\ 77.jpg);
 }
 
-.gallery-section #gallery-img-8 {
+.gallery-section #gallery-img-7 {
     background-image: url(../images/asset\ 62.jpg);
 }
 
@@ -1382,7 +1382,7 @@ footer {
     background-image: url(../images/asset\ 75.jpg);
 }
 
-.gallery-section #gallery-img-13 {
+.gallery-section #gallery-img-6 {
     background-image: url(../images/asset\ 67.jpg);
 }
 
@@ -1495,20 +1495,79 @@ footer {
 }
 
 /* gallery-Section -> Light-Section */
-
-.light-section .light-gallery img {
-    width: 320px;
-    height: 200px;
+.gallery-section .light-img-card {
+    background-size: cover;
+    background-position: top;
+    overflow: hidden;
+    transition: all .8s ease-in-out;
+    background-color: #222;
+    background-blend-mode: hard-light;
 }
 
-.light-gallery img {
-    filter: grayscale(100%);
-    transition: 1s;
-    margin-bottom: 4px;
+.gallery-section .light-img-card:hover {
+    background-position: center;
+    background-color: #999;
+    cursor: pointer;
+    box-shadow: 0 0 2px #fff;
 }
 
-.light-gallery img:hover {
-    filter: grayscale(0%);
+.gallery-section .light-gallery {
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 180px;
+}
+
+.gallery-section #light-img-1 {
+    background-image: url(../images/light\ box\ 1.jpg);
+}
+
+.gallery-section #light-img-2 {
+    background-image: url(../images/light\ box\ 2.jpg);
+}
+
+.gallery-section #light-img-3 {
+    background-image: url(../images/light\ box\ 3.jpg);
+}
+
+.gallery-section #light-img-4 {
+    background-image: url(../images/light\ box\ 4.jpg);
+}
+
+.gallery-section #light-img-5 {
+    background-image: url(../images/light\ box\ 5.jpg);
+}
+
+.gallery-section #light-img-6 {
+    background-image: url(../images/light\ box\ 6.jpg);
+}
+
+.gallery-section #light-img-7 {
+    background-image: url(../images/light\ box\ 7.jpg);
+}
+
+.gallery-section #light-img-8 {
+    background-image: url(../images/light\ box\ 8.jpg);
+}
+
+.gallery-section #light-img-11 {
+    background-image: url(../images/light\ box\ 11.jpg);
+}
+
+.gallery-section #light-img-13 {
+    background-image: url(../images/light\ box\ 13.jpg);
+}
+
+.gallery-section #light-img-14 {
+    background-image: url(../images/light\ box\ 14.jpg);
+}
+
+.gallery-section #light-img-15 {
+    background-image: url(../images/light\ box\ 15.jpg);
+}
+
+.gallery-section #light-img-16 {
+    background-image: url(../images/light\ box\ 17.jpg);
 }
 
 

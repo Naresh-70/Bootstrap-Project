@@ -89,7 +89,7 @@ scrollbtn.addEventListener('click', () => {
 //     }
 // });
 
-
+// Navbar
 let nav = document.querySelector(".navbar");
 window.onscroll = function () {
     if (document.documentElement.scrollTop > 720) {
@@ -111,5 +111,4 @@ const navLink = document.querySelectorAll('nav a').
         }
     })
 
-// Light Section.
 
