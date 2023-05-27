@@ -1276,13 +1276,27 @@ footer {
 
 .gallery-section .nav-tabs {
     border: none;
+    gap: 40px;
+}
+
+.gallery-section .nav-tabs .nav-link {
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1.5rem;
+    background-color: var(--secondary-text-color);
+    transition: .8s ease;
+}
+
+.gallery-section .nav-tabs .nav-link:hover {
+    background-color: var(--primary-text-color);
 }
 
 .gallery-section .bg-gallery {
     background: linear-gradient(to right, #041308, #0b3317);
 }
 
-.gallery-section .trainer-img-card {
+.gallery-section .gallery-img-card {
     background-size: cover;
     background-position: top;
     overflow: hidden;
@@ -1291,47 +1305,24 @@ footer {
     background-blend-mode: hard-light;
 }
 
-.gallery-section .trainer-img-card:hover {
+.gallery-section .gallery-img-card:hover {
     background-position: center;
     background-color: #999;
     cursor: pointer;
     box-shadow: 0 0 2px #fff;
 }
 
-.gallery-section ul li button {
-    color: #000;
-}
-
-.gallery-section ul {
-    font-size: 20px;
-    display: flex;
-    gap: 30px;
-}
-
-.nav-tabs .nav-link.active {
-    background-color: unset;
-}
-
-.gallery-section .nav-tabs li button {
-    border: unset;
-    background-color: unset;
-}
-
-.gallery-section ul li button:hover {
-    color: var(--primary-text-color);
+.gallery-section .gallery-card {
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 180px;
 }
 
 .gallery-section h2 {
     font-size: 2.5rem;
     letter-spacing: 1px;
     color: var(--text-white);
-}
-
-.gallery-section .gallery-card-2 {
-    gap: 10px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 180px;
 }
 
 .gallery-section .gallery-row-2 {
@@ -1399,33 +1390,6 @@ footer {
 }
 
 /* gallery-Section -> Gallery-Teacher */
-.gallery-section .bg-gallery {
-    background: linear-gradient(to right, #041308, #0b3317);
-}
-
-.gallery-section .teacher-img-card {
-    background-size: cover;
-    background-position: top;
-    overflow: hidden;
-    transition: all .8s ease-in-out;
-    background-color: #222;
-    background-blend-mode: hard-light;
-}
-
-.gallery-section .teacher-img-card:hover {
-    background-position: center;
-    background-color: #999;
-    cursor: pointer;
-    box-shadow: 0 0 2px #fff;
-}
-
-.gallery-section .gallery-card-1 {
-    gap: 10px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 180px;
-}
-
 .gallery-section #teacher-img-1 {
     background-image: url(../images/yoga\ teacher\ 1.jpg);
 }
@@ -1438,14 +1402,6 @@ footer {
     background-image: url(../images/yoga\ teacher\ 3.jpg);
 }
 
-.gallery-section #teacher-img-4 {
-    background-image: url(../images/yoga\ teacher\ 4.jpg);
-}
-
-.gallery-section #teacher-img-5 {
-    background-image: url(../images/yoga\ teacher\ 5.jpg);
-}
-
 .gallery-section #teacher-img-6 {
     background-image: url(../images/yoga\ teacher\ 6.jpg);
 }
@@ -1454,16 +1410,8 @@ footer {
     background-image: url(../images/yoga\ teacher\ 7.jpg);
 }
 
-.gallery-section #teacher-img-8 {
-    background-image: url(../images/yoga\ teacher\ 8.jpg);
-}
-
 .gallery-section #teacher-img-9 {
     background-image: url(../images/yoga\ teacher\ 9.jpg);
-}
-
-.gallery-section #teacher-img-10 {
-    background-image: url(../images/yoga\ teacher\ 10.jpg);
 }
 
 .gallery-section #teacher-img-11 {
@@ -1474,50 +1422,19 @@ footer {
     background-image: url(../images/yoga\ teacher\ 12.jpg);
 }
 
-.gallery-section #teacher-img-13 {
-    background-image: url(../images/yoga\ teacher\ 13.jpg);
-}
-
 .gallery-section #teacher-img-14 {
     background-image: url(../images/yoga\ teacher\ 14.jpg);
 }
 
-.gallery-section #teacher-img-15 {
-    background-image: url(../images/yoga\ teacher\ 15.jpg);
-}
-
 .gallery-section #teacher-img-16 {
-    background-image: url(../images/yoga\ teacher\ 16.jpg);
+    background-image: url(../images/yoga\ teacher\ 19.jpg);
 }
 
 .gallery-section #teacher-img-17 {
-    background-image: url(../images/yoga\ teacher\ 17.jpg);
+    background-image: url(../images/yoga\ teacher\ 8.jpg);
 }
 
 /* gallery-Section -> Light-Section */
-.gallery-section .light-img-card {
-    background-size: cover;
-    background-position: top;
-    overflow: hidden;
-    transition: all .8s ease-in-out;
-    background-color: #222;
-    background-blend-mode: hard-light;
-}
-
-.gallery-section .light-img-card:hover {
-    background-position: center;
-    background-color: #999;
-    cursor: pointer;
-    box-shadow: 0 0 2px #fff;
-}
-
-.gallery-section .light-gallery {
-    gap: 10px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-auto-rows: 180px;
-}
-
 .gallery-section #light-img-1 {
     background-image: url(../images/light\ box\ 1.jpg);
 }
@@ -1536,14 +1453,6 @@ footer {
 
 .gallery-section #light-img-5 {
     background-image: url(../images/light\ box\ 5.jpg);
-}
-
-.gallery-section #light-img-6 {
-    background-image: url(../images/light\ box\ 6.jpg);
-}
-
-.gallery-section #light-img-7 {
-    background-image: url(../images/light\ box\ 7.jpg);
 }
 
 .gallery-section #light-img-8 {
